@@ -1,1 +1,1 @@
-Campaign Trail Showcase is a fork of The New Campaign Trail by Decstar which is based upon The Campaign Trail by Dan Bryan, and is updated to include new features.
+Deepstate TCT is made to house mods made by members of the Deep State discord server. This is a very script kiddie-esque modification of Campaign Trail Showcase. Other than having a different set of mods, it is the exact same as Campaign Trail Showcase. All credit for the code goes to the people who have worked on Campaign Trail Showcase, The New Campaign Trail, and The Campaign Trail
