@@ -70316,7 +70316,7 @@ const { santorumWinsAlabama, gravelWinsAlaska } = campaignResults;
 if (!e.initDC) {
     e.initDC = true;
     
-    if (e.candidate_json[200].fields.last_name === "Paul") {
+    if (e.player_answers.includes(21146) && e.player_answers.includes(22333) && e.player_answers.includes(22390)) {
         if (Neo > 7 && Neo <= 9 && !santorumWinsAlabama) {
             changeState(1000, 202, 2); //2 Alabama for Santorum
         }
