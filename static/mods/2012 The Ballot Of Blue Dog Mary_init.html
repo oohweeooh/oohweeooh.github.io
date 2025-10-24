@@ -1,0 +1,1185 @@
+if (!e.done) {
+e.done = true;
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2012,
+            "summary": "A mandate on the run, the American people kidnapped by partisan kooks in the house, and a president who has stewarded over difficult times with failures both at home and abroad. President Wesley K. Clark was reelected against former Vice President Dick Cheney in a stunning upset during countrywide pandemonium.\n<p>\nAlmost three years into his second term, Republicans hold both chambers of Congress and have built a labyrinth from here to the 2012 election. This effort is in hopes that Vice President Landrieu will fail to find her way to the castle and finally end this eight-year-running Democratic joke.</p> <p>Will Landrieu find her way to a term of her own or be consumed by the maze walls surrounding her perilous journey?\n",
+            "image_url": "https://i.imgur.com/cd9iVxH.gif",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://archive-images.prod.global.a201836.reutersmedia.net/2011/01/21/2011-01-21T205506Z_02_RP3DRIAUTWAA_RTRRPP_0_IRAQ.JPG",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">Articles</h4>FiveThirtyEight - <a href=\"http://projects.fivethirtyeight.com/2016-swing-the-election/\" target=\"_blank\"> What Would It Take To Turn Blue States Red?</a></br><a href=\"http://thehill.com/blogs/ballot-box/presidential-races/274317-anti-trump-forces-point-to-losing-match-ups-with-clinton\">Anti-Trump forces seize on grim polls for Clinton match-up</a></br><a href=\"http://www.slate.com/blogs/the_slatest/2016/02/24/donald_trump_could_beat_hillary_clinton_in_the_general.html\">Think Hillary Clinton Will Crush Donald Trump in the General Election? Don’t Be So Sure.</a></br><a href=\"http://www.slate.com/blogs/the_slatest/2016/03/01/hillary_clinton_plots_her_general_election_trump_strategy.html\">How Team Clinton Is Planning to Defeat Trump</a></br><a href=\"http://www.vox.com/2016/2/10/10961324/donald-trump-win-november\">Here's Donald Trump's Best Strategy for Winning the White House</a><h4>Books</h4>\nHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1476751471/amhius20-20\" target=\"_blank\">Hard Choices</a></br>\nHillary Clinton - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0743222253/amhius20-20\" target=\"_blank\">Living History</a></br>\nDonald Trump - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1501137964/amhius20-20\" target=\"_blank\">Crippled America: How to Make America Great Again</a></br>\nDonald Trump - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0399594493/amhius20-20\" target=\"_blank\">The Art of the Deal</a></br>\nGary Johnson - <a href=\"http://www.amazon.com/exec/obidos/ASIN/B008PXW0C0/amhius20-20\" target=\"_blank\">Seven Principles of Good Government</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "2012 The Ballot Of Blue Dog Mary"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 201,
+        "fields": {
+            "first_name": "Mary",
+            "last_name": "Landrieu",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Louisiana",
+            "priority": 2,
+            "description": "<p>Mary Landrieu is not a new and exciting face on the political scene. That glory of the first female major party nominee was robbed because her face has remained at the edge of the frame for the last four years. Beyond the low enthusiasm for her candidacy also lies that she's a political bench warmer destined to fail so that the real political icon Hillary Clinton can take her seat on the throne in 4 years.\n<p>Ideologically, she's no more appealing than any other Democrat. She rarely makes thought-provoking speeches and refuses to stray too far from the standard party line since her first senate victory in the 90s. She doesn't even collect the scorn of the opposition; she's merely a face that the American people are indifferent toward. In a world where some religiously follow the incumbent president's word while others find everything he speaks revolting, she has made herself nobody's greatest enemy. But at the same time, it sucks to be nobody's favorite person.",
+            "color_hex": "#595b91",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/e6jIxM2.png",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2016 election.</h3><p>In spite of a hard-fought challenge from Donald Trump, you have become the first woman elected to serve as President.</p><p>On the political front, it is unclear how much of your agenda you will be able to push forward with the current Congress. Hopefully your victory has helped Democrats further down the ballot. Start packing and prepare to move back into the White House!</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>Many of your supporters are despondent that you have faltered to the likes of Donald Trump. Many in the left wing of the party are furious that you pushed their candidate aside, only to lose. Time will tell how Trump operates as President. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
+            "no_electoral_majority_message": "<h3>Sorry! You have lost the 2016 election.</h3><p>No candidate secured a majority in the Electoral College. However, the Republicans won a majority in Congress and will elevate Trump to the Presidency. Time will tell how things go in that regard. As for you, a long and sometimes ambiguous political career seems to be coming to its end.</p>",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 200,
+        "fields": {
+            "first_name": "David",
+            "last_name": "Petraeus",
+            "election": 20,
+            "party": "Republican",
+            "state": "New York",
+            "priority": 3,
+            "description": "<p>The nominee, by acclamation, it's almost as if King David Petraeus holds a crystal ball that tells him precisely what the American people desire. His resume is built by a long and proven career fighting the wars in the Middle East under President Clark. Often clashing with the President, Petraeus resigned his post in Afghanistan to set up his run for President.\n<p>Seizing on the opportunity of a lifetime, Petraeus quickly rose through the Republican ranks to become their nominee. Now, with a confident smirk, he can easily kick the Clark Administration down the road, knowing circumstances weigh in his favor 10-1. By all means, he has already won this race.",
+            "color_hex": "#b3001b",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/a9L1Q8l.png",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 202,
+        "fields": {
+            "first_name": "Gary",
+            "last_name": "Johnson",
+            "election": 20,
+            "party": "Libertarians",
+            "state": "N/A",
+            "priority": 4,
+            "description": "'",
+            "color_hex": "#b2b27b",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "'",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "'",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 203,
+        "fields": {
+            "first_name": "Cynthia",
+            "last_name": "McKinney",
+            "election": 20,
+            "party": "Green",
+            "state": "N/A",
+            "priority": 5,
+            "description": "'",
+            "color_hex": "#579457",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/mike-pence-2016.jpg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Mike Pence is a former Congressman and the current Governor of Indiana. He is a popular figure among social conservatives and would help assuage concern about Trump among party insiders. He would add executive experience to the ticket and make few mistakes on the campaign trail, but he could also undercut Trump's outsider credentials.</p>",
+            "candidate_score": 0,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 212,
+        "fields": {
+            "first_name": "Wesley",
+            "last_name": "Clark",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Arkansas",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#85ada4",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/xh3nZph.gif",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<i>\"If the Clinton coalition had been on life support four years prior, it's now dead and buried.\"</i>\n<p>Wesley Clark was initially hailed as the Democratic savior, the solution to Bush's disaster. He now oversees a nation plagued by institutional rot. Since his vision was vindicated by the American people once again, he has dedicated his time to not only saving his fellow countrymen but also saving the world. \n<p>\nCaught between picking fights with bankers who attempt to take advantage of the pooled taxpayer money to save their interests and preaching a new global economic alliance to combat the recession at WEF summits, the visionary president has yet to achieve his goal of a united global economic vision. After a decisive rebuke of Democrats in the 2010 midterms, his mandate and the vision he wishes to continue are now on the shoulders of his loyal vice president, tasked with reviving this dying dog of a coalition or putting it out of its misery.",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 209,
+        "fields": {
+            "first_name": "Ned",
+            "last_name": "Lamont",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Connecticut",
+            "priority": 9,
+            "description": "'",
+            "color_hex": "#85ada4",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/F2XwOTw.pngg",
+            "electoral_victory_message": "'",
+            "electoral_loss_message": "'",
+            "no_electoral_majority_message": "'",
+            "description_as_running_mate": "<p>Ned Lamont emerged as the boy wonder of the anti-war movement, and perhaps no political victory defines the president's legacy than pulling him to win over Senator Joe Lieberman. Since that dazzling start, the junior Senator has established himself as a moderate liberal, much to the disappointment of the people who got him there.</p><p>Lamont is Clark's preferred choice for the role. His presence on the ticket would ease concerns about your foreign policy credentials. However, Lamont may struggle to resonate with the party's populist wing. A successful businessman, Lamont has often aligned with corporate interests over those of organized labor, which could harm your relationship with those demanding sweeping change.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 210,
+        "fields": {
+            "first_name": "Sherrod",
+            "last_name": "Brown",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Ohio",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/mXewI7W.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Sherrod Brown is the progressive stalwart that many in your camp see as the only candidate capable of galvanizing the Sanders base. As a sitting senator from Ohio, his selection would cost you a crucial vote that you likely won't get back. But at this stage, retaking the Senate already seems out of reach.</p><p>Choosing Brown would effectively sever ties with the Clinton-era coalition, especially in the South. That political machinery would be forever lost, leaving you to chart a new winning strategy on your own. It's a Hail Mary to choose him, but this campaign needs one.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 211,
+        "fields": {
+            "first_name": "Barack",
+            "last_name": "Obama",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Illinois",
+            "priority": 1,
+            "description": "<p>No one in the political spectrum is considered more of a rising star than Barack Obama. The former Senator of Illinois, now Governor, has redefined his national image as a principled reformer, taking on the entrenched Blagojevich machine and emerging as a symbol of integrity in an era of cynicism. Still sporting his trademark inspirational rhetoric and campaign style, he's the forward-thinking politician most of America adores.</p><p>Selecting him would complicate your standing in the South, but he remains the top choice for most of your advisors, as he strikes the perfect balance of progressive rhetoric and pragmatic policy. Clark may find an issue with the idea of elevating one of his more outspoken critics to your side, but his political influence is fading, and this campaign needs forward momentum.</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/ygjp8GS.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>No one in the political spectrum is considered more of a rising star than Barack Obama. The former Senator of Illinois, now Governor, has redefined his national image as a principled reformer, taking on the entrenched Blagojevich machine and emerging as a symbol of integrity in an era of cynicism. Still sporting his trademark inspirational rhetoric and campaign style, he's the forward-thinking politician most of America adores.</p><p>Selecting him would complicate your standing in the South, but he remains the top choice for most of your advisors, as he strikes the perfect balance of progressive rhetoric and pragmatic policy. Clark may find an issue with the idea of elevating one of his more outspoken critics to your side, but his political influence is fading, and this campaign needs forward momentum.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 1550,
+        "fields": {
+            "candidate": 201,
+            "running_mate": 212
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 155,
+        "fields": {
+            "candidate": 201,
+            "running_mate": 209
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 127036,
+        "fields": {
+            "candidate": 201,
+            "running_mate": 210
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 124098,
+        "fields": {
+            "candidate": 201,
+            "running_mate": 211
+        }
+    }
+]
+
+campaignTrail_temp.credits = "Literally Nelson Rockefeller & Oohweeooh <3"
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            201,
+            200,
+            202,
+            203
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            201,
+            200,
+            202,
+            203
+        ]
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2012,
+        "is_premium": 0,
+        "display_year": "2012 The Ballot Of Blue Dog Mary"
+    }
+]
+
+jet_data = {
+    "headerColor": "#ffffff",
+    "windowColor": "#ececec",
+    "containerColor": "#151113",
+    "innerWindowColor": "#151113",
+    "bannerImageUrl": "https://i.imgur.com/sRcoa8R.gif",
+    "backgroundImageUrl": "https://i.imgur.com/uy9ZNjv.gif",
+    "endingTextColor": "#000000",
+    "customQuote": "",
+    "gameTitle": "2012 The Ballot Of Blue Dog Mary"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>The Ballot Of Blue Dog Mary</h2>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#ffffff";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#ececec";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#151113";
+
+document.getElementById("header").src = "https://i.imgur.com/sRcoa8R.gif";
+
+document.body.background = "https://i.imgur.com/uy9ZNjv.gif";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#151113!important;}</style>";
+
+//#endcode
+
+
+corrr = `
+  <div style="font-size: 8px; font-family: monospace; color: white;">
+    <h2 style="font-style: normal;">
+      <img src="https://i.imgur.com/C1SKGBG.gif" alt="The Ballot Of Blue Dog Mary" style="margin-top: 11px;">
+    </h2>
+  </div>
+  `;
+
+styling = document.createElement("style");
+document.head.appendChild(styling);
+
+styling.innerHTML = `
+#opponent_selection_id_back {
+    display: none;
+}
+`
+
+let z = new MutationObserver((mutationsList, observer) => {
+    let runningMateSummary = document.querySelector("#running_mate_summary");
+    if (runningMateSummary) {
+        $("#running_mate_id_button").click();
+        observer.disconnect()
+    }
+});
+
+
+z.observe(document, { subtree: true, childList: true });
+
+}
+
+// Mutation Observer Setup (unchanged)
+const windowsAdvisorObserver = new MutationObserver((mutationList, observer) => {
+    const visitWindow = document.getElementsByClassName("overlay_window")[0];
+    if (!visitWindow || visitWindow.classList.contains("done")) return;
+    
+    visitWindow.classList.add("done", "window");
+    const titleBar = visitWindow.querySelector("h3");
+    if (titleBar) {
+        titleBar.classList.add("title-bar", "title-bar-text");
+        titleBar.style.paddingLeft = "3px";
+    }
+});
+
+windowsAdvisorObserver.observe(document.getElementById("game_window"), {
+    attributes: true,
+    childList: true,
+    subtree: true
+});
+
+// Music Player Classes (unchanged)
+class Song {
+    constructor(title, artist, album, coverLink, audioLink) {
+        this.title = title;
+        this.artist = artist;
+        this.album = album;
+        this.coverLink = coverLink;
+        this.audioLink = audioLink;
+    }
+}
+
+class Playlist {
+    constructor() {
+        this.songs = [];
+        this.currentSongIndex = 0;
+    }
+
+    addSong(song) {
+        this.songs.push(song);
+    }
+
+    getCurrentSong() {
+        return this.songs[this.currentSongIndex];
+    }
+
+    playNext() {
+        this.currentSongIndex = (this.currentSongIndex + 1) % this.songs.length;
+    }
+
+    playPrevious() {
+        this.currentSongIndex = (this.currentSongIndex - 1 + this.songs.length) % this.songs.length;
+    }
+}
+
+// DOM Helper Functions (unchanged)
+function createElement(type, className, innerHTML, attributes = {}) {
+    const element = document.createElement(type);
+    if (className) element.className = className;
+    if (innerHTML) element.innerHTML = innerHTML;
+    Object.entries(attributes).forEach(([attr, value]) => element.setAttribute(attr, value));
+    return element;
+}
+
+function formatTime(seconds) {
+    if (isNaN(seconds)) return "0:00";
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+// Player UI Functions
+function updateUI(playlist) {
+    const currentSong = playlist.getCurrentSong();
+    const player = document.getElementById("player");
+    
+    if (player) {
+        const coverElement = player.querySelector("#cover");
+        const titleElement = player.querySelector("#title");
+        const artistElement = player.querySelector("#artist");
+        const albumElement = player.querySelector("#album");
+        
+        if (coverElement) coverElement.src = currentSong.coverLink;
+        if (titleElement) titleElement.textContent = currentSong.title;
+        if (artistElement) artistElement.textContent = currentSong.artist;
+        if (albumElement) albumElement.innerHTML = `<em>${currentSong.album}</em>`;
+        
+        // Update upcoming tracks list
+        const upcomingList = player.querySelector(".vista-upcoming-list");
+        if (upcomingList) {
+            upcomingList.innerHTML = "";
+            const upcomingSongs = playlist.songs.slice(playlist.currentSongIndex + 1);
+            upcomingSongs.forEach((song, index) => {
+                const item = createElement("div", "vista-upcoming-item");
+                item.innerHTML = `
+                    <span class="vista-upcoming-number">${index + 1}.</span>
+                    <span class="vista-upcoming-title">${song.title}</span>
+                    <span class="vista-upcoming-artist">${song.artist}</span>
+                `;
+                upcomingList.appendChild(item);
+            });
+        }
+    }
+}
+
+// Event Listeners (unchanged)
+function setupEventListeners(playlist, audio) {
+    const playPauseButton = document.querySelector(".vista-play-btn");
+    const nextButton = document.querySelector(".vista-next-btn");
+    const prevButton = document.querySelector(".vista-prev-btn");
+    const volumeSlider = document.querySelector(".vista-volume-slider");
+    const progressTrack = document.querySelector(".vista-progress-track");
+    
+    playPauseButton?.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.play().then(() => {
+                playPauseButton.innerHTML = `
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <rect x="6" y="4" width="4" height="16" fill="currentColor"/>
+                        <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
+                    </svg>
+                `;
+                playPauseButton.classList.add("vista-pause-btn");
+                playPauseButton.classList.remove("vista-play-btn");
+            }).catch(e => {
+                console.log("Playback prevented:", e);
+                playPauseButton.innerHTML = `
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M8 5v14l11-7z" fill="currentColor"/>
+                    </svg>
+                `;
+            });
+        } else {
+            audio.pause();
+            playPauseButton.innerHTML = `
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                </svg>
+            `;
+            playPauseButton.classList.add("vista-play-btn");
+            playPauseButton.classList.remove("vista-pause-btn");
+        }
+    });
+
+    nextButton?.addEventListener("click", () => {
+        playlist.playNext();
+        updateUI(playlist);
+        audio.src = playlist.getCurrentSong().audioLink;
+        audio.play().catch(e => console.log("Autoplay prevented:", e));
+    });
+
+    prevButton?.addEventListener("click", () => {
+        playlist.playPrevious();
+        updateUI(playlist);
+        audio.src = playlist.getCurrentSong().audioLink;
+        audio.play().catch(e => console.log("Autoplay prevented:", e));
+    });
+
+    volumeSlider?.addEventListener("input", (e) => {
+        const val = volumeSlider.value;
+        audio.volume = val / 100;
+        volumeSlider.style.setProperty('--volume-level', `${val}%`);
+    });
+
+    progressTrack?.addEventListener("click", (e) => {
+        const rect = progressTrack.getBoundingClientRect();
+        const pos = (e.clientX - rect.left) / rect.width;
+        audio.currentTime = pos * audio.duration;
+    });
+
+    audio.addEventListener("timeupdate", () => {
+        const progressFill = document.querySelector(".vista-progress-fill");
+        const currentTimeDisplay = document.querySelector(".vista-current-time");
+        
+        if (progressFill) {
+            progressFill.style.width = `${(audio.currentTime / audio.duration) * 100}%`;
+        }
+        
+        if (currentTimeDisplay) {
+            currentTimeDisplay.textContent = formatTime(audio.currentTime);
+            const durationDisplay = document.querySelector(".vista-duration");
+            if (durationDisplay && !isNaN(audio.duration)) {
+                durationDisplay.textContent = formatTime(audio.duration);
+            }
+        }
+    });
+
+    audio.addEventListener("ended", () => {
+        playlist.playNext();
+        updateUI(playlist);
+        audio.src = playlist.getCurrentSong().audioLink;
+        audio.play().catch(e => console.log("Autoplay prevented:", e));
+    });
+}
+
+function createPlayerUI() {
+    const playerContainer = createElement("div", "vista-player", "", { id: "player" });
+    
+    // Title Bar
+    playerContainer.appendChild(createElement("div", "vista-title-bar", `
+            <div class="vista-title-text">Mary's iTunes</div>
+            <div class="vista-title-controls">
+                <button class="vista-close">
+                    <svg width="12" height="12" viewBox="0 0 12 12">
+                        <circle cx="6" cy="6" r="5.5" fill="#FF5F56" stroke="#E0443E"/>
+                        <path d="M4,4 L8,8 M8,4 L4,8" stroke="black" stroke-width="0.7" opacity="0.7"/>
+                    </svg>
+                </button>
+                <button class="vista-minimize">
+                    <svg width="12" height="12" viewBox="0 0 12 12">
+                        <circle cx="6" cy="6" r="5.5" fill="#FFBD2E" stroke="#DEA123"/>
+                        <path d="M4,6 L8,6" stroke="black" stroke-width="0.7" opacity="0.7"/>
+                    </svg>
+                </button>
+                <button class="vista-maximize">
+                    <svg width="12" height="12" viewBox="0 0 12 12">
+                        <circle cx="6" cy="6" r="5.5" fill="#27C93F" stroke="#1AAB29"/>
+                        <path d="M5,4.5 L7,4.5 L7,7.5 L5,7.5 Z" fill="none" stroke="black" stroke-width="0.7" opacity="0.7"/>
+                    </svg>
+                </button>
+            </div>
+    `));
+
+    // Main Content
+    const mainContent = createElement("div", "vista-main-content");
+    
+    // Left Column - Album Art
+    const leftColumn = createElement("div", "vista-left-column");
+    const coverElement = createElement("img", "vista-cover", "", { 
+        id: "cover",
+        alt: "Album Cover"
+    });
+    leftColumn.appendChild(coverElement);
+    
+    // Center Column - Song Info and Controls
+    const centerColumn = createElement("div", "vista-center-column");
+    
+    // Song Info
+    const songInfo = createElement("div", "vista-song-info");
+    songInfo.innerHTML = `
+        <h3 id="title" class="vista-title">Song Title</h3>
+        <p id="artist" class="vista-artist">Artist Name</p>
+        <p id="album" class="vista-album"><em>Album Name</em></p>
+    `;
+    
+    // Controls
+    const controlsContainer = createElement("div", "vista-controls-container");
+    controlsContainer.innerHTML = `
+        <div class="vista-controls">
+            <button class="vista-control-btn vista-prev-btn" aria-label="Previous track">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" fill="currentColor"/>
+                </svg>
+            </button>
+            <button class="vista-control-btn vista-play-btn" aria-label="Play/Pause">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                </svg>
+            </button>
+            <button class="vista-control-btn vista-next-btn" aria-label="Next track">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+        <div class="vista-progress-container">
+            <div class="vista-progress-bar">
+                <div class="vista-progress-track" role="slider" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                    <div class="vista-progress-fill"></div>
+                </div>
+                <div class="vista-time-display">
+                    <span class="vista-current-time">0:00</span>
+                    <span class="vista-duration">0:00</span>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    centerColumn.append(songInfo, controlsContainer);
+    
+    // Right Column - Upcoming Tracks
+    const rightColumn = createElement("div", "vista-right-column");
+    rightColumn.innerHTML = `
+        <div class="vista-upcoming-header">Mary's Mix</div>
+        <div class="vista-upcoming-list"></div>
+    `;
+    
+    // Volume Control (moved to left column)
+    const volumeControl = createElement("div", "vista-volume-container", `
+        <div class="vista-volume-control">
+            <input type="range" min="0" max="100" value="50" 
+                class="vista-volume-slider" aria-label="Volume control">
+            <div class="vista-volume-icons">
+                <svg class="vista-volume-icon" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                </svg>
+                <svg class="vista-volume-icon" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+            </div>
+        </div>
+    `);
+    
+    // Add volume control to left column
+    leftColumn.appendChild(volumeControl);
+    
+    // Assemble Player
+    mainContent.append(leftColumn, centerColumn, rightColumn);
+    playerContainer.append(mainContent);
+    
+    return playerContainer;
+}
+
+// Initialize Player (unchanged)
+function initializePlayer() {
+    let playlist = new Playlist();
+    
+    // Add songs to playlist with album names
+    const songs = [
+        new Song("Back to the Basics", "Lana Del Rey", "Unreleased", "https://i.imgur.com/rXST8M8.jpeg", "https://audio.jukehost.co.uk/G1P3pjSgl9RdnovhQLcAO9A4RTBuQMcx"),
+        new Song("Lights", "Ellie Goulding", "Lights", "https://i.imgur.com/Ue8DOMC.png", "https://audio.jukehost.co.uk/NZKwHDTbb6OW9df7PBEk7hLkNq7rSdug"),
+        new Song("Born This Way", "Lady Gaga", "Born This Way", "https://i.imgur.com/ITcYiaH.png", "https://audio.jukehost.co.uk/J9BYFSYbYKRZNNCBOqlPbiht2W4W5wIk"),
+        new Song("Hello", "Martin Solveig feat. Dragonette", "Smash", "https://i.imgur.com/d1fy2LM.png", "https://audio.jukehost.co.uk/cnXjLyeN6i2t0XNYFQPheIkqIUICHc6x"),
+        new Song("You Belong With Me", "Taylor Swift", "Fearless", "https://i.imgur.com/1qGqho7.png", "https://audio.jukehost.co.uk/IpsWsfHqwT2Mu3gSTQDsnzDm6fILXyFf"),
+        new Song("Walking On Sunshine", "Aly & AJ", "Into The Rush", "https://i.imgur.com/0Xzivgz.png", "https://audio.jukehost.co.uk/7kq5cjOTjloqidzYbdHrtY3QumRKwX6O"),
+        new Song("Girl on Fire", "Alicia Keys", "Girl on Fire", "https://i.imgur.com/JarcVBX.png", "https://audio.jukehost.co.uk/kRcXPtol8tPb8XgeaXNOcIGiC0Zu3g0g"),
+        new Song("Just Give Me A Reason", "P!nk", "The Truth About Love", "https://i.imgur.com/eKQxWao.png", "https://audio.jukehost.co.uk/SNYhL3VtS7D8r968kRSajPAvJCJUsXFO")
+    ];
+    
+    songs.forEach(song => playlist.addSong(song));
+
+    // Create and setup audio element
+    const audio = createElement("audio", "", "", {
+        id: "audio",
+        src: playlist.getCurrentSong().audioLink
+    });
+    audio.volume = 0.5;
+
+    // Create and setup player UI
+    const playerContainer = createPlayerUI();
+    document.getElementById("game_window").insertAdjacentElement("afterend", playerContainer);
+    document.body.appendChild(audio);
+
+    // Setup event listeners
+    setupEventListeners(playlist, audio);
+    updateUI(playlist);
+
+    // Set initial play/pause state
+    const playPauseButton = document.querySelector(".vista-play-btn");
+    audio.play().then(() => {
+        playPauseButton.innerHTML = `
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <rect x="6" y="4" width="4" height="16" fill="currentColor"/>
+                <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
+            </svg>
+        `;
+        playPauseButton.classList.add("vista-pause-btn");
+        playPauseButton.classList.remove("vista-play-btn");
+    }).catch(e => {
+        console.log("Autoplay prevented:", e);
+        playPauseButton.innerHTML = `
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M8 5v14l11-7z" fill="currentColor"/>
+            </svg>
+        `;
+    });
+
+    // Expose to window (unchanged)
+    window.Playlist = Playlist;
+    window.Song = Song;
+    window.changePlaylist = (newPlaylist) => {
+        playlist = newPlaylist;
+        playlist.currentSongIndex = 0;
+        updateUI(playlist);
+        audio.src = playlist.getCurrentSong().audioLink;
+        audio.play();
+    };
+    window.updateUI = updateUI;
+}
+
+// Vista-style CSS (updated)
+const vistaStyle = document.createElement("style");
+vistaStyle.textContent = `
+.vista-player {
+    width: 960px;
+    height: 250px; 
+    position: relative;
+    background: rgba(242,176,181,255) !important;
+    border: 1px solid #a5acb5;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+    overflow: hidden;
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.vista-title-bar {
+    background: rgba(157, 0, 83, 1) !important;
+    color: white;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #2c3f7a;
+    user-select: none;
+}
+
+.vista-title-text {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.vista-title-controls span {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.vista-title-controls span:hover {
+    opacity: 1;
+}
+
+.vista-title-controls button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.vista-title-controls button svg {
+    display: block;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+}
+
+.vista-main-content {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    gap: 20px;
+    height: calc(100% - 30px); 
+}
+
+.vista-left-column {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    gap: 10px; 
+    align-items: center;
+}
+
+.vista-cover {
+    width: 135px;
+    height: 135px;
+    border: 1px solid #a5acb5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+.vista-center-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    gap: 10px; /* Reduced gap */
+    height: 100%;
+}
+
+.vista-song-info {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0 !important;
+}
+
+.vista-title {
+    margin: 0 !important; 
+    font-size: 20px;
+    color: rgba(157, 0, 83, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vista-artist {
+    margin: 0 !important; 
+    font-size: 16px;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vista-album {
+    margin: 0 !important; 
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.vista-controls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 0; 
+    margin-bottom: 5px;
+}
+
+.vista-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Reduced gap */
+}
+
+.vista-progress-container {
+    margin-top: 5px; /* Reduced margin */
+    width: 100%;
+}
+
+.vista-progress-bar {
+    width: 100%;
+}
+
+.vista-progress-track {
+    height: 6px;
+    background: #c5cdd9;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 3px; /* Reduced margin */
+    width: 100%;
+}
+
+.vista-progress-fill {
+    height: 100%;
+    background: rgba(157, 0, 83, 1) !important;
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.vista-time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #555;
+}
+
+.vista-control-btn {
+    background: transparent !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: none !important;
+    padding: 5px; /* Added padding */
+    transition: transform 0.1s ease;
+    width: 40px; /* Smaller buttons */
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.vista-control-btn:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.vista-control-btn:active {
+    transform: scale(0.95);
+}
+
+.vista-control-btn svg {
+    width: 24px;
+    height: 24px;
+    color: #2a3f8f;
+}
+
+.vista-right-column {
+    width: 220px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    padding: 8px; /* Reduced padding */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.vista-upcoming-header {
+    font-weight: bold;
+    color: #9d0053;
+    margin-bottom: 8px; /* Reduced margin */
+    padding-bottom: 3px; /* Reduced padding */
+    border-bottom: 1px solid #c5cdd9;
+    font-size: 13px; /* Smaller font */
+}
+
+.vista-upcoming-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.vista-upcoming-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0; /* Reduced padding */
+    font-size: 12px;
+    border-bottom: 1px solid #e2e8f5;
+    gap: 6px; /* Reduced gap */
+}
+
+.vista-upcoming-item:last-child {
+    border-bottom: none;
+}
+
+.vista-upcoming-number {
+    color: black;
+    font-weight: bold;
+    min-width: 18px; /* Reduced width */
+    font-size: 11px; /* Smaller font */
+}
+
+.vista-upcoming-title {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    font-size: 11px; /* Smaller font */
+}
+
+.vista-upcoming-artist {
+    color: #777;
+    font-size: 10px; /* Smaller font */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vista-volume-container {
+    position: relative; 
+    width: 80%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.vista-volume-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 3px; /* Reduced gap */
+}
+
+.vista-volume-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 6px; /* Thinner slider */
+    margin: 0;
+    background: linear-gradient(to right, #9d0053 0%, #9d0053 var(--volume-level, 50%), #c5cdd9 var(--volume-level, 50%), #c5cdd9 100%);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.vista-volume-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 3px; /* Reduced padding */
+}
+
+.vista-volume-icon {
+    width: 16px; /* Smaller icons */
+    height: 16px;
+    color: #4b6bc6;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.vista-volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px; /* Smaller thumb */
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #a5acb5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.vista-volume-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #a5acb5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+`;
+document.head.appendChild(vistaStyle);
+
+// Initialize the player after DOM is fully loaded
+initializePlayer();
+
+  addDynamicCSS();
+
+e = campaignTrail_temp
+
+
+  function addDynamicCSS() {
+    var css = `
+        .inner_window_question h3 .mytooltip{
+            background-color: #ffd53e;
+        }
+  
+        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: #ffd53e;
+        }
+  
+        .mytooltip .mytooltiptext {
+            width: 200px;
+            background-color: #ffd53e;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+            left: 20%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid black;
+            pointer-events: none;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            font-weight: normal !important;
+            font-style: normal !important;
+        }
+  
+        .mytooltip .mytooltiptext img {
+            max-width: 200px;
+            height: auto;
+        }
+  
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+    `;
+  
+    var styleElem = document.createElement('style');
+    styleElem.type = 'text/css';
+    
+    styleElem.appendChild(document.createTextNode(css));
+    
+    document.head.appendChild(styleElem);
+  }
+
+
+addDynamicCSS();
+
+  tooltipList = [
+    {searchString: "2010", explanationText: "<img src=https://i.imgur.com/CPbobuw.gif> Death of the Clinton Coalition."},
+    {searchString: "Arlen Specter", explanationText: "<img src=https://i.imgur.com/mWgNIcB.gif> The testament to the Clinton era cronies' desperation to keep power. Backed by Clark and the rest of the Democratic establishment, former Republican turned Democrat Arlen Specter fended off progressive rising star Joe Sestak. All in favor of keeping the seat blue with a man barely representing the Democratic Party and a waning clock of time left in this world."},
+    {searchString: "Debt Ceiling Debate", explanationText: "<img src=https://i.imgur.com/aYwlML1.jpeg> Austerity yummers, The GOP is looking to gut the welfare state your administration created in what is effectively a hostage crisis, pinning you between the positions of kill the poor and destroying the economy through defaulting on debt."},
+    {searchString: "Debbie Stabenow", explanationText: "<img src=https://i.imgur.com/sTKxPz9.jpeg> Senate Minority Leader, a good friend of yours, who picked up the rubble left behind by Reid's loss in 2010. She has no mandate to save your legislative goals, but she can help stall the incoming Republican onslaught."},
+    {searchString: "Hillary Clinton", explanationText: "<img src=https://i.imgur.com/ulEZtPM.jpeg> Popular Secretary of State and the prefered pick of the Democratic establishment while encompassing everything you lack. Popularity, influence, and power. She takes the place as the nominee in waiting, hoping that through your failure this year, she can propel herself to a future presidential run."},
+    {searchString: "Bernie Sanders", explanationText: "<img src=https://i.imgur.com/LZLd0up.jpeg> The bearer of the progressive flag, he's launching himself against you, not hoping to win, but dragging you toward his beliefs. Some call him a sexist for choosing now of all times to cause a fuss. Clark spent years appeasing his wing of the party by tossing around bankers during the AIG Bonus Bailout crisis, but they are still not satisfied."},
+    {searchString: "AIG", explanationText: "<img src=https://i.imgur.com/QTsFNV1.jpeg> President Clark made a message out of the failed bankers at AIG, stating that you can't grovel for the taxpayers' dime and expect to abuse that funding for personal gain without consequences. Surprisingly, one of the President's brighter moments, which he credits for saving the party's credibility with the left."},
+    {searchString: "Freedom To Marry Act", explanationText: "<img src=https://i.imgur.com/HJrk3N0.jpeg> The President's first legislative stumble, attempting to repeal the federal ban on gay marriage. Through his noble crusade, he created the groundworks for the Constitutional Republican movement to sweep his mandate away years later."},   
+    {searchString: "Freedom to Marry Act", explanationText: "<img src=https://i.imgur.com/HJrk3N0.jpeg> The President's first legislative stumble, attempting to repeal the federal ban on gay marriage. Through his noble crusade, he created the groundworks for the Constitutional Republican movement to sweep his mandate away years later."},   
+    {searchString: "Constitutional Conservatives", explanationText: "<img src=https://i.imgur.com/vOoA96B.png> The Republicans' new engine for electoral success. Finding its Foundations during 2006 through hysteria over gay rights destroying the sanctity of marriage and later galvanized by Mike Huckabee's run for President, cut short by convention racketeering on Cheney's end, the Constitutional Conservatives are the next generation of Republicans. While Democrats hold onto the 90s political era desperately, Republicans are rejuvenated and ready to fight for the evangelical dream."},
+    {searchString: "Yulia Tymoshenko", explanationText: "<img src=https://i.imgur.com/ROvaDX1.jpeg> President of Ukraine, representing the Batkivshchyna Party, which declared victory over the Party of Religions candidate Viktor Yanukovych in the 2010 presidential election, rebuking Russia and the Ukrainian oligarchy backing Yanukovych."},
+    {searchString: "Herman Cain", explanationText: "<img src=https://i.imgur.com/hN9WvN6.jpeg> The early Republican favorite to take the nomination, who collapsed during the primaries after allegations that he sexually assaulted two women during his time as head of the National Restaurant Association. He claims it was a political hit job made by the Petraeus campaign. Of course, David claims no wrongdoing."},
+    {searchString: "Cain", explanationText: "<img src=https://i.imgur.com/hN9WvN6.jpeg> The early Republican favorite to take the nomination, who collapsed during the primaries after allegations that he sexually assaulted two women during his time as head of the National Restaurant Association. He claims it was a political hit job made by the Petraeus campaign. Of course, David claims no wrongdoing."},
+    {searchString: "Tom Tancredo", explanationText: "<img src=https://i.imgur.com/xLZGpAI.jpeg> The Republican nominee of 2008 only by convention robbery. Running to regain the Compassionate Conservative grip over the party, but later failed to impress the American public. The face of the constitutional conservative wing rages against the establishment."},
+    {searchString: "Dick Cheney", explanationText: "<img src=https://i.imgur.com/Mcd9o2n.png> The Huckabee outreach program to get African Americans in the fold."}
+  ];
